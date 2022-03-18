@@ -26,7 +26,7 @@ Twee Databricks notebooks zijn gebruikt om verschillende stappen te verrichten:
 Ga naar de notebook Notebook1_ocr_tika.py. Vul de juiste parameters in.
 
 <p align="center">
-  <img src="images/parameters.PNG" width="50%">
+  <img src="images/parameters.PNG">
 </p>
 
 Run de ETL steps op de pdf documenten en check dat alle documenten goed geparsed zijn. Herhaal als nodig de OCR en dan de tika parsen.
@@ -42,7 +42,7 @@ Als resultaat wordt er een map 'Output_ProDC' gemaakt in de 'process directory' 
 Installeer de dictionary en wizard handeling in je lokale adobe settings door naar de map 'Output_ProDC' te gaan en 'bestanden_installeren.bat' te runnen.
 
 <p align="center">
-  <img src="images/adobe_bestanden.png" width="50%">
+  <img src="images/adobe_bestanden.png">
 </p>
 
 ### Bestanden markeren
