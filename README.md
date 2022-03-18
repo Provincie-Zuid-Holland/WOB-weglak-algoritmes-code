@@ -65,9 +65,9 @@ Het is ook mogelijk om de gemarkeerde bestanden in een specifieke map op te slaa
 Voor het werken met gemarkeerde bestanden in Adobe Acrobat Pro DC zie de handleiding.
 
 ## Auteurs
-Joana Cardoso
-Michael de Winter
-Dennis van Muijen
+- Joana Cardoso
+- Michael de Winter
+- Dennis van Muijen
 
 ## Contact
 Voor vragen of opmerkingen graag contact opnemen met vdwh@pzh.nl.
