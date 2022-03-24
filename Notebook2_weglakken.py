@@ -62,8 +62,6 @@ import pandas as pd
 import numpy as np
 from jinja2 import Template
 
-# import shutil
-
 # COMMAND ----------
 
 # make folder for output bestanden
