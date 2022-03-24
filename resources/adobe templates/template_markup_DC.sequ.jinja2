@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://ns.adobe.com/acrobat/workflow/2012" title="{{project_name}}" description="Handeling om een set aan documenten te markeren" majorVersion="1" minorVersion="1">
+	<Sources defaultCommand="WorkflowPlaybackSelectFile"/>
+	<Group label="Stap 1:">
+		<Separator/>
+		<Separator/>
+		<Command name="EVMP_AutoRedact_MarkupFromDictionaryCommand" pauseBefore="false" promptUser="false">
+			<Items>
+				<Item name="AddExemptionBoxes" type="boolean" value="true"/>
+				<Item name="AnnotationNote" type="text" value="???"/>
+				<Item name="AnnotationSubject" type="text" value="Redacting"/>
+				<Item name="AnnotationType" type="text" value="Square"/>
+				<Item name="BorderWidth" type="integer" value="1"/>
+				<Items name="CodePos">
+					<Item name="x" type="integer" value="5"/>
+					<Item name="y" type="integer" value="1"/>
+				</Items>
+				<Items name="Color">
+					<Item name="Item0" type="double" value="1.000000"/>
+					<Item name="Item1" type="double" value="0.000000"/>
+					<Item name="Item2" type="double" value="0.000000"/>
+					<Item name="Item3" type="double" value="0.000000"/>
+					<Item name="Space" type="integer" value="1"/>
+				</Items>
+				<Item name="CountLineEnds" type="boolean" value="false"/>
+				<Item name="CreateNewDocument" type="boolean" value="true"/>
+				<Item name="DeleteAnnotations" type="boolean" value="true"/>
+				<Item name="DeleteMetadata" type="boolean" value="false"/>
+				<Item name="DictionaryToUse" type="text" value="{{dictionary_name}}"/>
+				<Item name="DoNotAllowOverlappingAnnotations" type="boolean" value="true"/>
+				<Item name="DoNotAllowRedactingWithoutExemptionCode" type="boolean" value="false"/>
+				<Item name="ExcludeWords" type="text" value=""/>
+				<Item name="ExecuteScriptAfter" type="boolean" value="false"/>
+				<Item name="ExecuteScriptBefore" type="boolean" value="false"/>
+				<Items name="ExpandRedactingAnnots">
+					<Item name="Bottom" type="double" value="0.000000"/>
+					<Item name="Left" type="double" value="0.000000"/>
+					<Item name="Right" type="double" value="0.000000"/>
+					<Item name="Top" type="double" value="0.000000"/>
+				</Items>
+				<Item name="ExportToTextFilename" type="text" value=""/>
+				<Item name="FillBoxes" type="boolean" value="true"/>
+				<Items name="FillBoxesColor">
+					<Item name="Item0" type="double" value="0.784317"/>
+					<Item name="Item1" type="double" value="0.784317"/>
+					<Item name="Item2" type="double" value="0.784317"/>
+					<Item name="Item3" type="double" value="0.000000"/>
+					<Item name="Space" type="integer" value="1"/>
+				</Items>
+				<Item name="ImageFill" type="integer" value="0"/>
+				<Item name="LastPage" type="integer" value="0"/>
+				<Item name="MatchCase" type="integer" value="1"/>
+				<Item name="MatchWholeWords" type="integer" value="0"/>
+				<Item name="ModifyAnnots" type="boolean" value="false"/>
+				<Items name="OffsetRedactingAnnots">
+					<Item name="h" type="double" value="0.000000"/>
+					<Item name="v" type="double" value="0.000000"/>
+				</Items>
+				<Item name="OverlapMethod" type="integer" value="0"/>
+				<Item name="PDF2ImageDPI" type="integer" value="300"/>
+				<Item name="PageSelection" type="integer" value="0"/>
+				<Item name="PageSubset" type="integer" value="0"/>
+				<Items name="PatternMatchingSettings">
+					<Item name="CustomRegExp" type="text" value=""/>
+					<Item name="ExemptionCode" type="text" value=""/>
+					<Items name="FontFilter">
+						<Item name="FontName" type="text" value=""/>
+						<Item name="FontSize" type="double" value="10.000000"/>
+						<Item name="FontSizeTolerance" type="double" value="0.500000"/>
+						<Item name="MatchFontName" type="boolean" value="false"/>
+						<Item name="MatchFontSize" type="boolean" value="false"/>
+					</Items>
+					<Item name="MarkupAddress" type="boolean" value="false"/>
+					<Item name="MarkupCompanyNames" type="boolean" value="false"/>
+					<Item name="MarkupDates" type="boolean" value="false"/>
+					<Item name="MarkupEmails" type="boolean" value="false"/>
+					<Item name="MarkupPhones" type="boolean" value="false"/>
+					<Item name="MarkupSSN" type="boolean" value="false"/>
+					<Item name="MarkupTextInBrackets" type="boolean" value="false"/>
+					<Item name="MatchCase" type="boolean" value="false"/>
+					<Item name="MatchWholeWords" type="boolean" value="false"/>
+					<Item name="UseCustomPattern" type="boolean" value="false"/>
+					<Item name="m_bMarkupAccountNumbers12digits" type="boolean" value="true"/>
+				</Items>
+				<Item name="PerformDirectRedacting" type="boolean" value="false"/>
+				<Item name="RedactCrossout" type="boolean" value="true"/>
+				<Item name="RedactFormFields" type="boolean" value="true"/>
+				<Item name="RedactHighlight" type="boolean" value="true"/>
+				<Item name="RedactRectangle" type="boolean" value="true"/>
+				<Item name="RedactUnderline" type="boolean" value="true"/>
+				<Item name="RedactingChar" type="text" value=" "/>
+				<Item name="RemoveAnnotsFormFields" type="boolean" value="true"/>
+				<Item name="RemoveAnnotsFreeText" type="boolean" value="true"/>
+				<Item name="RemoveAnnotsMultimedia" type="boolean" value="true"/>
+				<Item name="RemoveCrossout" type="boolean" value="true"/>
+				<Item name="RemoveHighlight" type="boolean" value="true"/>
+				<Item name="RemoveRectangle" type="boolean" value="true"/>
+				<Item name="RemoveUnderline" type="boolean" value="false"/>
+				<Item name="SaveLogFile" type="boolean" value="false"/>
+				<Item name="ScriptAfter" type="text" value=""/>
+				<Item name="ScriptBefore" type="text" value=""/>
+				<Item name="SortOrder" type="integer" value="2"/>
+				<Item name="StartPage" type="integer" value="0"/>
+				<Item name="StrokeBoxes" type="boolean" value="false"/>
+				<Items name="StrokeBoxesColor">
+					<Item name="Item0" type="double" value="1.000000"/>
+					<Item name="Item1" type="double" value="0.000000"/>
+					<Item name="Item2" type="double" value="0.000000"/>
+					<Item name="Item3" type="double" value="0.000000"/>
+					<Item name="Space" type="integer" value="1"/>
+				</Items>
+				<Item name="SummarizeAnnotations" type="boolean" value="false"/>
+				<Items name="Tolerances">
+					<Item name="Bottom" type="double" value="5.000000"/>
+					<Item name="Left" type="double" value="10.000000"/>
+					<Item name="Right" type="double" value="10.000000"/>
+					<Item name="Top" type="double" value="5.000000"/>
+				</Items>
+				<Item name="UseExcludeWords" type="boolean" value="false"/>
+				<Items name="WatermarkText">
+					<Item name="AlignH" type="integer" value="80"/>
+					<Item name="AlignV" type="integer" value="985040"/>
+					<Item name="Angle" type="integer" value="0"/>
+					<Item name="BehindText" type="boolean" value="false"/>
+					<Items name="FillColor">
+						<Item name="Item0" type="double" value="0.000000"/>
+						<Item name="Item1" type="double" value="0.000000"/>
+						<Item name="Item2" type="double" value="0.784317"/>
+						<Item name="Item3" type="double" value="0.000000"/>
+						<Item name="Space" type="integer" value="1"/>
+					</Items>
+					<Item name="FillOpacity" type="double" value="1.000000"/>
+					<Item name="FontName" type="integer" value="0"/>
+					<Item name="FontNameString" type="text" value=""/>
+					<Item name="FontSize" type="integer" value="7"/>
+					<Item name="MCTag" type="text" value="Watermark"/>
+					<Item name="PosOrigin" type="integer" value="1"/>
+					<Item name="PosX" type="double" value="10.000000"/>
+					<Item name="PosY" type="double" value="10.000000"/>
+					<Item name="RenderMode" type="integer" value="0"/>
+					<Items name="StrokeColor">
+						<Item name="Item0" type="double" value="0.000000"/>
+						<Item name="Item1" type="double" value="0.000000"/>
+						<Item name="Item2" type="double" value="0.000000"/>
+						<Item name="Item3" type="double" value="0.000000"/>
+						<Item name="Space" type="integer" value="1"/>
+					</Items>
+					<Item name="StrokeLineWidth" type="double" value="1.000000"/>
+					<Item name="StrokeOpacity" type="double" value="1.000000"/>
+					<Item name="Text" type="text" value=""/>
+				</Items>
+			</Items>
+		</Command>
+		<Command name="WorkflowPlaybackSaveFiles" pauseBefore="false" promptUser="false">
+			<Items>
+				<Item name="AddToBaseName" type="boolean" value="true"/>
+				<Item name="DocSaveDestType" type="string" value="WorkflowPlaybackSave"/>
+				<Item name="DontOverwrite" type="boolean" value="true"/>
+				<Item name="EmbedIndex" type="boolean" value="false"/>
+				<Item name="FileVariation" type="integer" value="0"/>
+				<Item name="HandleOutput" type="boolean" value="true"/>
+				<Item name="InsertAfterBaseName" type="text" value=""/>
+				<Item name="InsertBeforeBaseName" type="text" value=""/>
+				<Item name="NumbericNaming" type="boolean" value="false"/>
+				<Item name="OptimizePDF" type="boolean" value="true"/>
+				<Item name="PresetName" type="text" value="Standaard"/>
+				<Item name="RunPDFOptimizer" type="boolean" value="false"/>
+			</Items>
+		</Command>
+	</Group>
+</Workflow>
