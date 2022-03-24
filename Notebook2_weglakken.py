@@ -760,7 +760,7 @@ outF.close()
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ## Choose output type (Pro DC or X pro)
+# MAGIC ## Choose Adobe version (Pro DC or X pro) and only markup or autoredact
 
 # COMMAND ----------
 
@@ -825,6 +825,7 @@ template.stream(wob_project=project_name).dump(autobatch_name)
 # template.stream(wob_project=project_name).dump(install_name)
 
 # # Copy autoredact configuration files to folder 'bestanden'
+# import shutil
 # copy_autoredact = shutil.copy('/dbfs/mnt/wob-resources/adobe/configuration_files/AutoRedact.cfs', output_bestanden)
 # copy_wob_codes = shutil.copy('/dbfs/mnt/wob-resources/adobe/configuration_files/AutoRedactCodesLocal.cfs', output_bestanden)
 
