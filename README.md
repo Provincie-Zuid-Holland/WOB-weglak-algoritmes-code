@@ -75,7 +75,7 @@ Het is ook mogelijk om de gemarkeerde bestanden in een specifieke map op te slaa
 Open Adobe Acrobat Pro DC en ga naar 'Gereedschappen'. Klik op 'Wizard Handelingen' en selecteer de geïnstalleerd handeling. Klik op 'Bestanden Toevoegen' om een map of losse bestanden toe te voegen en klik daarna op begin. De documenten worden een per een geopend, gemarkeerd en opgeslagen.
 
 ## Weglakken in Adobe Acrobat Pro DC
-Voor het werken met gemarkeerde bestanden in Adobe Acrobat Pro DC zie de handleiding.
+Voor het werken met gemarkeerde bestanden in Adobe Acrobat Pro DC zie de [handleiding](https://github.com/Provincie-Zuid-Holland/WOB-weglak-algoritmes-code/tree/main/handleiding).
 
 ## Auteurs
 - Joana Cardoso
