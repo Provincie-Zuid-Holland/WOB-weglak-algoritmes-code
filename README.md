@@ -13,7 +13,7 @@ De volgende persoonsgegevens kunnen worden herkend:
 - Voor‐ en achternamen
 - Geldbedragen
 - KvK‐nummer, IBAN, BRS‐nummer, telefoonnummers
-- Persoonlijk beleidsopvattingen (indicatie van waar ze in de tekst zou kunnen staan)
+- Persoonlijk beleidsopvattingen (indicatie van waar het in de tekst zou kunnen zijn)
 
 Twee Databricks notebooks zijn gebruikt om verschillende stappen te verrichten:
 - Notebook1_ocr_tika.py: 
@@ -22,6 +22,7 @@ Twee Databricks notebooks zijn gebruikt om verschillende stappen te verrichten:
 - Notebook2_weglakken.py: in deze notebook worden op basis van verschillende regex (reguliere expressies) persoonsgegevens herkent. Een dictionary wordt gemaakt van alle herkent gegevens. Bestanden voor het markeren van de pdf documenten in Adobe Acrobat en voor het installeren van de juiste adobe settings worden ook gecreëerd.
 
 ## Persoonsgegevens herkennen in Databricks
+
 ### OCR en tika parsen
 Ga naar Notebook1_ocr_tika.py. Vul de juiste parameters in.
 
@@ -37,7 +38,13 @@ In Notebook2_weglakken.py wordt een dictionary met herkent persoonsgegevens gema
 Deze notebook kan meteen worden gebruikt vanaf Notebook1_ocr_tika.py'. Om de notebook zelf te runnen moeten de parameters aangepast worden.
 Als resultaat wordt er de map 'Output_ProDC' gemaakt in de 'process directory' met de benodigde bestanden (inclusief de Adobe dictionary) voor het markeren van de PDF's in Adobe Acrobat.
 
-## PDF's markeren in Adobe Acrobat Pro DC of X Pro
+## PDF's markeren in Adobe Acrobat Pro DC
+
+**Let op:** plug-in AutoRedact is nodig.
+
+### AutoRedact configureren
+Om de AutoRedact te configureren zo dat een lijst met wob uitzondering gronden en verschillende AutoRedact settings in meerdere computers snel gebruikt kunnen worden volg de instructie in map 'AutoRedact configuratie'.
+
 ### Bestanden downloaden en installeren
 Installeer de dictionary en wizard handeling in je lokale adobe settings door naar de map 'Output_ProDC' te gaan en 'bestanden_installeren.bat' te runnen.
 
@@ -45,8 +52,11 @@ Installeer de dictionary en wizard handeling in je lokale adobe settings door na
   <img src="images/adobe_bestanden.png">
 </p>
 
-### Bestanden markeren
-Run daarna het bestand 'AutoBatch.bat'. 'AutoBatch.bat' gaat Adobe Acrobat Pro DC aan de achterkant openen, de bestanden markeren en opslaan, en Adobe closen. Deze kan op twee manieren gedraaid worden. 
+### Bestanden markeren met Autobatch
+
+**Let op:** plug-in Autobatch is nodig.
+
+Run het bestand 'AutoBatch.bat'. 'AutoBatch.bat' gaat Adobe Acrobat Pro DC aan de achterkant openen, de bestanden markeren en opslaan, en Adobe closen. Deze kan op twee manieren gedraaid worden. 
 Dubbelklik op 'AutoBatch.bat' om handmatig individuele bestanden te selecteren voor markering. Gemarkeerde bestanden worden in de map met de originele bestanden opgeslagen (originele bestanden worden vervangen). 
 
 'AutoBatch.bat' kan ook vanaf de opdrachtprompt gedraaid worden. Met deze optie kan ook een map met eventueel sub-mappen geselecteerd worden. De gemarkeerde bestanden worden dan opgeslagen in de originele mappen (originele bestanden worden vervangen).
@@ -60,6 +70,9 @@ Het is ook mogelijk om de gemarkeerde bestanden in een specifieke map op te slaa
 <p align="center">
   <img src="images/autobatch_cmd2.png" width="75%">
 </p>
+
+### Bestanden markeren zonder Autobatch
+Open Adobe Acrobat Pro DC en ga naar 'Gereedschappen'. Klik op 'Wizard Handelingen' en selecteer de geïnstalleerd handeling. Klik op 'Bestanden Toevoegen' om een map of losse bestanden toe te voegen en klik daarna op begin. De documenten worden een per een geopend, gemarkeerd en opgeslagen.
 
 ## Weglakken in Adobe Acrobat Pro DC
 Voor het werken met gemarkeerde bestanden in Adobe Acrobat Pro DC zie de handleiding.
