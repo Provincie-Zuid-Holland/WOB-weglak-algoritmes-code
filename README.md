@@ -4,8 +4,8 @@
 
 ## Inleiding
 
-In het kader van het WOB/WOO hebben wij algoritmes ontwikkeld om persoonsgegevens te gaan identificeren in documenten. Met behulp van de code in deze repository kunnen persoonsgegevens in documenten gemarkeerd worden in Adobe Acrobat.
-Het begin punt is dat het bestandstype van de documenten moet pdf zijn. Om documenten naar pdf te converteren kan de [PDF-conversion-tool](https://github.com/Provincie-Zuid-Holland/PDF-conversion-tool) gebruikt worden. 
+In het kader van het WOB/WOO hebben wij algoritmes ontwikkeld om persoonsgegevens te identificeren in documenten. Geïdentificeerd gegevens kunnen worden gebruikt om documenten te markeren en weg te lakken in Adobe Acrobat.
+Het bestandstype van de documenten moet wel pdf zijn. Om documenten naar pdf te converteren kan de [PDF-conversion-tool](https://github.com/Provincie-Zuid-Holland/PDF-conversion-tool) gebruikt worden. 
 
 De volgende persoonsgegevens kunnen worden herkend:
 - Email adressen
