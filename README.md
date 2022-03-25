@@ -22,6 +22,7 @@ Twee Databricks notebooks zijn gebruikt om verschillende stappen te verrichten:
 - Notebook2_weglakken.py: in deze notebook worden op basis van verschillende regex (reguliere expressies) persoonsgegevens herkent. Een dictionary wordt gemaakt van alle herkent gegevens. Bestanden voor het markeren van de pdf documenten in Adobe Acrobat en voor het installeren van de juiste adobe settings worden ook gecreëerd.
 
 ## Persoonsgegevens herkennen in Databricks
+Voor de vereiste libraries en init script zie de map 'resources'.
 
 ### OCR en tika parsen
 Ga naar Notebook1_ocr_tika.py. Vul de juiste parameters in.

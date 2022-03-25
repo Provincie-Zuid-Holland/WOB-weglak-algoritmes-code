@@ -1,0 +1,4 @@
+- tika
+- pandas
+- numpy
+- pdfminer
